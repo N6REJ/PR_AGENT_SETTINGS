@@ -1,0 +1,22 @@
+[github_app]
+handle_push_trigger = true
+push_commands = [
+    "/describe",
+    "/review",
+    "/improve",
+]
+
+[pr_reviewer]
+enable_review_labels_effort = true
+num_code_suggestions=6
+
+[pr_code_suggestions]
+summarize=true
+num_code_suggestions=6
+rank_suggestions = true
+
+[pr_add_docs] # /add_docs #
+docs_style = "Sphinx Style"
+
+[pr_update_changelog]
+push_changelog_changes=true
